@@ -2,6 +2,7 @@ require 'FileUtils'
 require 'optparse'
 require 'find'
 
+require_relative "ios_template/version.rb"
 require_relative "ios_template/CopyTemplateCommand.rb"
 require_relative "ios_template/GetFrameworkNameCommand.rb"
 require_relative "ios_template/RenameFilesCommand.rb"

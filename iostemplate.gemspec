@@ -4,23 +4,22 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "ios_template/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "ios_template"
-  spec.version       = IosTemplate::VERSION
+  spec.name          = "iostemplate"
+  spec.version       = Template::VERSION
   spec.authors       = ["Gaétan Zanella"]
   spec.email         = ["gaetan.zanella@fabernovel.com"]
 
   spec.summary       = %q{iOS template generator}
   spec.description   = %q{iOS template generator}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/gaetanzanella/ios_template"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = ""
-
+    spec.metadata["allowed_push_host"] = "https://rubygems.org"
     spec.metadata["homepage_uri"] = spec.homepage
-    spec.metadata["source_code_uri"] = ""
-    spec.metadata["changelog_uri"] = ""
+    spec.metadata["source_code_uri"] = "https://github.com/gaetanzanella/ios_template"
+    spec.metadata["changelog_uri"] = "https://github.com/gaetanzanella/ios_template/blob/master/CHANGELOG.md"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
